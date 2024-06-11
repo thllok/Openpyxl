@@ -72,7 +72,7 @@ if __name__ =="__main__":
     ws[reduce_excel_col_name(1) + str(1)].fill = yellowFill
 
     # way to formatting range of cells
-    for row in ws.iter_rows('A1:D100'):
+    for row in ws['A1:D100']:
         for cell in row:
             cell.value = "testing"
             cell.font = font_bold
